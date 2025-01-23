@@ -1,0 +1,17 @@
+<div class="d-flex flex-column">
+    <h2 class="align-self-center align-self-lg-start">Cadastro</h2>
+    <form action="" class="align-items-center align-items-lg-start mx-auto mx-lg-0" [formGroup]="form">
+        <label for="">CPF:</label>
+        <input type="text" class="form-control" formControlName="CPF">
+        <label for="">Nome:</label>
+        <input type="text" class="form-control" formControlName="nome">
+        <label for="">email:</label>
+        <input type="text" class="form-control" formControlName="email">
+        <label for="">Senha:</label>
+        <input type="password" class="form-control" formControlName="senha">
+        <div class="flex-column flex-sm-row d-flex">
+            <button class="w-100" (click)="cadastrar()">Cadastrar</button>
+            <a href="" routerLink="/login">Entrar</a>
+        </div>
+    </form>
+</div>

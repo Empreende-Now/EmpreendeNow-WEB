@@ -1,0 +1,11 @@
+{
+  "usuarios": [
+    {
+      "id": "109e",
+      "nome": "Alisson",
+      "email": "Alisson@gmail.com",
+      "senha": "asdpokaspdok",
+      "categoria": 3
+    }
+  ]
+}
