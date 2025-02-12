@@ -16,4 +16,9 @@ export class UsuarioService {
   login(usuario: any): Observable<any>{
     return this.http.post("http://localhost:4100/usuario/login", usuario, {observe:'response'})
   }
+
+  atualizarSenha(dados: any): Observable<any>{
+    return this.http.put("http://localhost:4100/usuario/atualizarSenha/" + dados.cpf, {senha: dados.novaSenha}, {observe:'response'})
+  }
+
 }

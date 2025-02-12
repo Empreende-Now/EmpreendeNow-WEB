@@ -1,0 +1,14 @@
+<div class="d-flex flex-column">
+    <h2 class="align-self-center align-self-lg-start">Atualizar senha</h2>
+    <form class="align-items-center align-items-lg-start mx-auto mx-lg-0" [formGroup]="form">
+        <label for="">CPF</label>
+        <input type="text" class="form-control" formControlName="cpf">
+        <label for="">Nova senha</label>
+        <input type="text" class="form-control" formControlName="novaSenha">
+        <div>
+            <button (click)="atualizarSenha($event)">Atualize</button>
+            <p>ou</p>
+            <a href="" routerLink="/login">Login</a>
+        </div>
+    </form>
+</div>
